@@ -1,0 +1,31 @@
+Deadlocks
+Race conditions
+Preventing Race conditions
+    expiclit mutual exclusion locking
+        Reentrantlock objects -
+Implicit monitor locking
+    synchronized signature clause
+    synchronous blocks
+
+RACE Conditions:
+
+Situation in which multiple threads have access tot eh same object and try to modfiy that object without
+checkign if its used by other threads
+
+Can cuase ConcurrentModificationException to be thrown
+
+Runnable Class
+
+Consider an application in which multiple threads are responsible for mutating a single object state across
+multiple thread objects
+
+public class Asynchronous implements Runnable
+
+
+Indentifying Race conditions
+Notice that the output
+
+
+Reentrantlock TIDBITS:
+are owned by the thread last sucessfully locking but not yet unlcoking it.
+thread invoking
